@@ -22,7 +22,7 @@ public class Person {
 //        int year = Integer.parseInt(arr[2]);
 //        int month = Integer.parseInt(arr[1]);
 //        int day = Integer.parseInt(arr[0]);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d.MM.yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         LocalDate localDate = LocalDate.parse(dateOfBirth, formatter);
         System.out.println(localDate.getYear());
         LocalDate birthday = LocalDate.of(localDate.getYear(), localDate.getMonth(), localDate.getDayOfMonth());
